@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="object">
+        <item>教师</item>
+        <item>在校生家长</item>
+        <item>毕业生家长</item>
+    </string-array>
+</resources>
+

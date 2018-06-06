@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/login_wallpaper1" >
+
+       <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:background="#000000" >
+      	<TextView
+      	    android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:layout_centerInParent="true"
+       		android:textColor="#fff"
+       		android:textSize="16sp"
+       		android:text="登录"
+      	    />
+
+      	 <Button
+      	     android:id="@+id/register"
+      	     android:layout_width="wrap_content"
+      	     android:layout_height="wrap_content"
+      	     android:layout_alignParentRight="true"
+      	     android:layout_alignParentTop="true"
+      	     android:background="#000000"
+      	     android:textSize="14sp"
+      	     android:text="注册"
+      	     android:textColor="#fff"/>
+
+      
+
+       </RelativeLayout>
+       
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+    	<ImageView
+    	    android:id="@+id/img1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_centerHorizontal="true"
+    	    android:src="@drawable/login" />
+
+    </RelativeLayout>
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+  <!--    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="用户名:"/>    -->
+     <EditText
+        android:id="@+id/userId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:hint="请填写用户账号"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/userPswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:password="true"
+        android:hint="请输入密码"  />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        >
+        
+    <RadioGroup 
+        android:id="@+id/object "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+         <RadioButton
+            android:id="@+id/teacher"
+            android:text="教师" 
+            android:textSize="12sp"/> 
+
+        <RadioButton
+            android:id="@+id/undergraduate_parents"
+            android:text="在校生家长"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/graduate_parents"
+            android:text="毕业生父母"
+            android:textSize="12sp" />
+        
+    </RadioGroup>
+   </RelativeLayout> 
+   
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        >
+        <CheckBox
+            android:id="@+id/rememberPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/rememberPass"
+            android:layout_alignBottom="@+id/rememberPass"
+            android:layout_toRightOf="@+id/rememberPass"
+            android:text="Remember password" />
+
+       </RelativeLayout> 
+    
+    
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登    录" />
+
+</LinearLayout>

@@ -1,0 +1,274 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/login_wallpaper1" >
+   <!-- 头部  -->
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+         >
+	<!-- 返回 -->
+         <ImageView
+             android:id="@+id/img_head"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/title_back_normal" />
+         
+         
+        <TextView
+            android:id="@+id/text_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="基本信息"
+            android:textColor="#000000"
+            android:textSize="16sp" />   
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc" /> 
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#EEEEEE" >
+        </RelativeLayout> 
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc" /> 
+       <!-- 头像图片 -->
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       >
+
+         <ImageView
+             android:id="@+id/img_head"
+             android:layout_width="50dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:src="@drawable/new_regist_poppic_default" />
+         
+    </RelativeLayout>
+    
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc" /> 
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#EEEEEE" >
+        </RelativeLayout> 
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc" /> 
+    
+     <!-- 用户编号 --> 
+   <RelativeLayout
+        android:id="@+id/userId"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        
+         >
+
+    	<TextView
+    	    android:id="@+id/userId2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="20dp"
+    	    android:layout_centerVertical="true"
+    	    android:layout_marginLeft="18dp"
+    	    android:layout_toRightOf="@+id/userId1"
+    	    />
+
+    	<TextView
+    	    android:id="@+id/userId1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="20dp"
+    	    android:layout_alignBaseline="@+id/userId2"
+    	    android:layout_alignBottom="@+id/userId2"
+    	    android:layout_alignParentLeft="true"
+    	    android:text="用户编号:" />
+
+   </RelativeLayout>
+   
+   
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc" /> 
+  
+    
+       <!-- 任教学科 -->
+   <RelativeLayout
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+       
+         >
+
+    	<TextView
+    	    android:id="@+id/subject1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="20dp"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_alignParentLeft="true"
+    	    android:text="任教学科:" />
+
+    	<TextView
+    	    android:id="@+id/subject2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="20dp"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_marginLeft="18dp"
+    	    android:layout_toRightOf="@+id/subject1"
+    	     />
+
+   </RelativeLayout>
+   
+   
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc" /> 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#EEEEEE" >
+        </RelativeLayout> 
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc" /> 
+    
+     <!-- 用户名 -->
+   <RelativeLayout
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+       
+         >
+
+    	<TextView
+    	    android:id="@+id/userName2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="20dp"
+    	    android:layout_centerVertical="true"
+    	    android:layout_marginLeft="18dp"
+    	    android:layout_toRightOf="@+id/userName1"
+    	    />
+
+    	<TextView
+    	    android:id="@+id/userName1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="20dp"
+    	    android:layout_alignBaseline="@+id/userName2"
+    	    android:layout_alignBottom="@+id/userName2"
+    	    android:layout_alignParentLeft="true"
+    	    android:text="用  户  名:" />
+
+    	
+
+   </RelativeLayout>
+   
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc" /> 
+   
+     <!-- 用户性别 -->
+   <RelativeLayout
+        android:id="@+id/userSex"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        
+         >
+
+    	<TextView
+    	    android:id="@+id/userSex2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="20dp"
+    	    android:layout_centerVertical="true"
+    	    android:layout_marginLeft="18dp"
+    	    android:layout_toRightOf="@+id/userSex1"
+    	    />
+
+    	<TextView
+    	    android:id="@+id/userSex1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="20dp"
+    	    android:layout_alignBaseline="@+id/userSex2"
+    	    android:layout_alignBottom="@+id/userSex2"
+    	    android:layout_alignParentLeft="true"
+    	    android:text="性        别:" />
+
+   </RelativeLayout>
+   
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc" /> 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#EEEEEE" >
+        </RelativeLayout> 
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc" /> 
+        
+  <!-- 用户账号 --> 
+   <RelativeLayout
+       android:id="@+id/userAccount"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+      
+         >
+
+    	<TextView
+    	    android:id="@+id/userAccount2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="20dp"
+    	    android:layout_centerVertical="true"
+    	    android:layout_marginLeft="18dp"
+    	    android:layout_toRightOf="@+id/userAccount1"
+    	    />
+
+    	<TextView
+    	    android:id="@+id/userAccount1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="20dp"
+    	    android:layout_alignBaseline="@+id/userAccount2"
+    	    android:layout_alignBottom="@+id/userAccount2"
+    	    android:layout_alignParentLeft="true"
+    	    android:text="联系方式/账号:" />
+
+    	<ImageView
+    	    android:layout_width="10dp"
+    	    android:layout_height="10dp"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_centerVertical="true"
+    	    android:src="@drawable/messages_card_arrow" />
+
+   </RelativeLayout>
+    
+   
+   
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc" /> 
+       
+   
+</LinearLayout>
